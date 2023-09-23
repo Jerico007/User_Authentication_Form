@@ -1,5 +1,5 @@
 //To prevent back button to load sign up page
-window.history.forward();
+// window.history.forward();
 let p2 =  document.getElementsByName("confirm-password")[0];
 let p1 = document.getElementsByName("password")[0];
 //To validate password
@@ -44,6 +44,14 @@ form.addEventListener("submit", (e) => {
 
 
 //To redirect tab
-function noBack() {
-    window.history.forward();
+// function noBack() {
+//     window.history.forward();
+// }
+
+function stopBack(){
+  window.history.go(1);
 }
+
+window.addEventListener("load", ()=>{
+  window.history.go(1);
+})
