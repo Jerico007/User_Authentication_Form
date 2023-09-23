@@ -1,7 +1,9 @@
+
+
 //if token is null redirect to index page
 if(localStorage.getItem("token") === null)
 {
-    window.open("index.html","_self");
+    window.open(window.location.origin,"_self");
 }
 
 let logoutBtn = document.getElementById("logout");
@@ -21,6 +23,6 @@ userDetails.innerHTML = `
 //Adding event to logout button
 logoutBtn.addEventListener("click",()=>{
     localStorage.clear();
-    window.open("index.html","_self");
+    window.open(window.location.origin,"_self");
 })
 
