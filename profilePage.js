@@ -1,7 +1,7 @@
 //if token is null redirect to index page
 if(localStorage.getItem("token") === null)
 {
-    window.open("https://jerico007.github.io/User_Authentication_Form/index.html","_self");
+    window.open("index.html","_self");
 }
 
 let logoutBtn = document.getElementById("logout");
@@ -21,6 +21,6 @@ userDetails.innerHTML = `
 //Adding event to logout button
 logoutBtn.addEventListener("click",()=>{
     localStorage.clear();
-    window.open("https://jerico007.github.io/User_Authentication_Form/index.html","_self");
+    window.open("index.html","_self");
 })
 
