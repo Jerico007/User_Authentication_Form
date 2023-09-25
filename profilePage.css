@@ -24,9 +24,8 @@ body > img {
   z-index: -100;
 }
 body > p {
-  font-size: 5vw;
- color: #625BF7;
-
+  font-size: 2.9rem;
+  color: #625bf7;
 }
 
 .profile-details {
@@ -36,34 +35,70 @@ body > p {
   row-gap: 9vh;
   background-color: white;
   border-radius: 3px;
-  padding: 2vw;
+  padding: 1.2rem;
   box-shadow: 0px 0px 10px 0px black;
 }
 
 .profile-details > h2 {
-  font-size: 3vw;
+  font-size: 2.7rem;
 }
 
 .profile-details > i {
-  font-size: 6vw;
+  font-size: 6rem;
 }
 
 .user-details {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    gap: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
 }
 .user-details > p {
-  font-size: 1.9vw;
+  font-size: 1.5rem;
 }
-.profile-details > button{
-    font-size: 2vw;
-    width: 25vw;
-    background: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+.profile-details > button {
+  font-size: 1.9rem;
+  width: 100%;
+  background: linear-gradient(180deg, #625bf7 0%, #463eea 100%);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 376px) {
+  body > p {
+    font-size: 1.9rem;
+    color: #625bf7;
+  }
+  .profile-details > h2 {
+    font-size: 2.5rem;
+  }
+  .profile-details > i {
+    font-size: 5rem;
+  }
+  .user-details > p {
+    font-size: 0.8rem;
+  }
+  .profile-details > button {
+    font-size: 1.8rem;
+    width: 100%;
+    background: linear-gradient(180deg, #625bf7 0%, #463eea 100%);
     color: white;
     cursor: pointer;
     outline: none;
     border: none;
     border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 426px) {
+  .user-details > p {
+    font-size: 1.1rem;
+  }
+  body > p {
+    font-size: 2rem;
+    color: #625bf7;
+  }
 }
